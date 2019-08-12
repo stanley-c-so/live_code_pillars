@@ -1,6 +1,6 @@
 top priority items in bold:
 
-#SEQUELIZE
+# SEQUELIZE
 - **define with a few basic properties**
 - some validations
 - instance methods
@@ -9,13 +9,13 @@ top priority items in bold:
 - hooks
 - **associations**
 
-#EXPRESS
+# EXPRESS
 - write up a router (<-- the router will already be defined for them on pillars, they'll just need to add to it)
 - **GET with and without params**
 - POST
 - **PUT (remember returning true)**
 
-#REACT
+# REACT
 - **stateful comp (no methods)**
 - dumb comp
 - **map (with key)**
