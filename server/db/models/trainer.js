@@ -3,6 +3,7 @@
 const db = require('../database');
 const Sequelize = require('sequelize');
 
+//You don't need pokemon
 const Pokemon = require('./pokemon');
 
 // SCHEMA: set up name, badges (array)

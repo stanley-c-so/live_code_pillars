@@ -3,6 +3,7 @@
 const db = require('../database');
 const Sequelize = require('sequelize');
 
+//You don't actually need trainer.
 const Trainer = require('./trainer');
 
 // SCHEMA: set up name (string), pokedexNum (integer), element (string), description (text)

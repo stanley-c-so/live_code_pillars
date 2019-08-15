@@ -30,8 +30,9 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).send(err.message);
 });
 
+//added which port we are listening to.
 app.listen(port, () => {
-  console.log('listening!');
+  console.log(`listening on port ${port}!`);
 });
 
 module.exports = app;

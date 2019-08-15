@@ -39,4 +39,29 @@ router.put('/:id', async (req, res, next) => {
   }
 });
 
+router.post('/', async (req, res, next) => {
+  try {
+    const { name } = req.body;
+    const newTrainer = await Trainer.create({
+      name,
+    });
+    res.send(newTrainer);
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.delete('/:id', async (req, res, next) => {
+  try {
+    const deleted = await Trainer.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.json(deleted);
+  } catch (err) {
+    next(err);
+  }
+});
+
 module.exports = router;
