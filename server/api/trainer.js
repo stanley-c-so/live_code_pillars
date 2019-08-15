@@ -14,9 +14,9 @@ router.get('/:id', async (req, res, next) => {
   try {
     const trainer = await Trainer.findOne({
       where: {
-        id: req.params.id,
+        id: req.params.id
       },
-      include: [{ model: Pokemon }],
+      include: [{ model: Pokemon }]
     });
     res.send(trainer);
   } catch (err) {
@@ -26,14 +26,15 @@ router.get('/:id', async (req, res, next) => {
 
 router.put('/:id', async (req, res, next) => {
   try {
-    const trainer = await Trainer.findOne({
+    //Second argument can be destructured, or we can get it below
+    //using trainer[0] in the res.json()
+    const [numberOfRowsUpdated, [trainer]] = await Trainer.update(req.body, {
       where: {
-        id: req.params.id,
+        id: req.params.id
       },
+      returning: true
     });
-    const newName = req.body.newName;
-    const row = await trainer.update({ name: newName });
-    res.send(row);
+    res.json(trainer);
   } catch (err) {
     next(err);
   }
