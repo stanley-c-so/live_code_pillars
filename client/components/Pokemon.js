@@ -2,6 +2,7 @@ import React from 'react';
 
 const Pokemon = props => {
   const { name, pokedexNum, element, description } = props;
+
   return (
     <div>
       <h1>Name: {name}</h1>
