@@ -1,6 +1,33 @@
+## PILLARS REVIEW LIVE CODE
+
+1. Create models for Pokemon and Trainer
+2. Create routes for Trainer
+3. Create a component for PokemonList
+
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+
 top priority items in bold:
 
 # SEQUELIZE
+
 - **define with a few basic properties**
 - some validations
 - instance methods
@@ -10,12 +37,14 @@ top priority items in bold:
 - **associations**
 
 # EXPRESS
+
 - write up a router (<-- the router will already be defined for them on pillars, they'll just need to add to it)
 - **GET with and without params**
 - POST
 - **PUT (remember returning true)**
 
 # REACT
+
 - **stateful comp (no methods)**
 - dumb comp
 - **map (with key)**
