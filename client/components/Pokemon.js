@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Pokemon = props => {
-  const { name, pokedexNum, element, description } = props;
+  const { name, pokedexNum, element, description } = props.pokemon;
 
   return (
     <div>
